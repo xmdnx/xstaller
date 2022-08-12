@@ -30,5 +30,15 @@ repo = {
     "Notepadqq": "sudo add-apt-repository ppa:notpadqq-team/notepadqq && sudo apt update && sudo apt install notepadqq",
     "Whatever (.deb)": "wget https://liquidtelecom.dl.sourceforge.net/project/whatever-evernote-client/v1.0.0/Whatever_1.0.0_amd64.deb && sudo dpkg -i Whatever_1.0.0_amd64.deb && sudo apt update && sudo apt upgrade",
     "Music on Console": "sudo apt-get install moc moc-ffmpeg-plugin",
+    "Bitcoin Core": "sudo add-apt-repository ppa:bitcoin/bitcoin && sudo apt update && sudo apt-get install bitcoin-qt",
+    "Pinta": "sudo snap install pinta",
+    "Guake": "sudo apt-get install guake",
+    "Konversation": "sudo apt-get install konversation",
+    "Conky": "sudo apt-get install conky-all",
+    "Plume Creator": "sudo apt-get install plume-creator",
+    "Flameshot": "sudo apt-get install flameshot",
+    "Shortwave": "sudo snap install shortwave",
+    "Geany": "sudo apt-get install geany",
+    "Mumble Server": "sudo apt-get install mumble-server",
     
 }
