@@ -65,6 +65,7 @@ console.print('Rich installed!', style='good')
 def menu():
     cls()
     if not ubuntu: console.print('NOT UBUNTU MODE!', style='bad')
+    console.print('For exit press CTRL+C', style='good')
     console.print(table)
     id_for_install = input('Enter ID of app you want install: ')
     program_name = repo_ids[id_for_install]
