@@ -26,7 +26,7 @@ if input('Your answer (y/n): ') == 'n':
     ubuntu = False
 
 # INSTALL DEPENDECIES
-os.system('sudo apt install python3-pip')
+os.system('sudo apt install python3-pip --fix-missing')
 os.system('pip3 install rich')
 
 # IMPORT RICH
@@ -41,8 +41,14 @@ table = Table(title='Programs')
 table.add_column('ID', style='bold cyan')
 table.add_column('App Name', style='bold green')
 
+i = 0
+
+repo_ids = { }
+
 for k in repo.repo.keys():
-    table.add_row(k)
+    table.add_row(str(i), k)
+    repo_ids[str(i)] = k
+    i+=1
 
 # SETUP THEME
 custom_theme = Theme ({
@@ -61,7 +67,8 @@ def menu():
     if not ubuntu: console.print('NOT UBUNTU MODE!', style='bad')
     console.print(table)
     id_for_install = input('Enter ID of app you want install: ')
-    os.system(repo.comms[int(id_for_install)])
+    program_name = repo_ids[id_for_install]
+    os.system(repo.repo[program_name])
 
 while True:
     menu()
