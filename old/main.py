@@ -8,8 +8,7 @@
 #            XSTALLER
 # Full work guaranteed only on Ubuntu
 
-import os, sys, time
-import repo as repo
+import os, sys, time, xstallerrepo
 
 # VARIABLES
 ubuntu = True
@@ -26,7 +25,7 @@ if input('Your answer (y/n): ') == 'n':
     ubuntu = False
 
 # INSTALL DEPENDECIES
-os.system('sudo apt install python3-pip --fix-missing')
+os.system('sudo apt install python3-pip')
 os.system('pip3 install rich')
 
 # IMPORT RICH
@@ -41,14 +40,8 @@ table = Table(title='Programs')
 table.add_column('ID', style='bold cyan')
 table.add_column('App Name', style='bold green')
 
-i = 0
-
-repo_ids = { }
-
-for k in repo.repo.keys():
-    table.add_row(str(i), k)
-    repo_ids[str(i)] = k
-    i+=1
+for i in range(0, len(xstallerrepo.names)):
+    table.add_row(str(i), xstallerrepo.names[i])
 
 # SETUP THEME
 custom_theme = Theme ({
@@ -65,11 +58,8 @@ console.print('Rich installed!', style='good')
 def menu():
     cls()
     if not ubuntu: console.print('NOT UBUNTU MODE!', style='bad')
-    console.print('For exit press CTRL+C', style='good')
     console.print(table)
     id_for_install = input('Enter ID of app you want install: ')
-    program_name = repo_ids[id_for_install]
-    os.system(repo.repo[program_name])
+    os.system(xstallerrepo.comms[int(id_for_install)])
 
-while True:
-    menu()
+menu()
