@@ -63,4 +63,5 @@ def menu():
     id_for_install = input('Enter ID of app you want install: ')
     os.system(repo.comms[int(id_for_install)])
 
-menu()
+while True:
+    menu()
