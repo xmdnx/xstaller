@@ -41,8 +41,8 @@ table = Table(title='Programs')
 table.add_column('ID', style='bold cyan')
 table.add_column('App Name', style='bold green')
 
-for i in range(0, len(repo.names)):
-    table.add_row(str(i), repo.names[i])
+for k in repo.repo.keys():
+    table.add_row(k)
 
 # SETUP THEME
 custom_theme = Theme ({
