@@ -8,10 +8,9 @@ new_data = old_data.replace('}', '    "')
 
 while not exxit:
     program_name = input('Название программы: ')
-    if program_name == 'xxsit': sys.exit()
-    number_of_comms = int(input('Кол-во комманд: '))
-    comms = []
-    for i in range(number_of_comms):
-        comms[i] = input('Команда ' + str(i))
+    if program_name == 'xxsit': break
+    command = input('Команда: ')
+    new_data += program_name + '": "' + command + '",\n'
 
+new_data += "}"
 repo.write(new_data)
