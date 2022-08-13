@@ -9,7 +9,7 @@
 # Full work guaranteed only on Ubuntu
 
 import os, sys, time
-import beta_repo as repo
+import beta.repo_beta as repo
 
 # VARIABLES
 ubuntu = True
