@@ -15,6 +15,5 @@ repo = {
     "Clementine": "sudo add-apt-repository ppa:me-davidsansome/clementine && sudo apt update && sudo apt install clementine",
     "Audacity": "sudo add-apt-repository ppa:ubuntuhandbook1/audacity && sudo apt update && sudo apt install audacity",
     "Vim": "sudo apt-get install vim",
-    "Inkscape": "sudo add-apt-repository ppa:inkscape.dev/stable && sudo apt update && sudo apt install inkscape"
-    
+    "Inkscape": "sudo add-apt-repository ppa:inkscape.dev/stable && sudo apt update && sudo apt install inkscape",
 }
