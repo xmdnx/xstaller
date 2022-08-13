@@ -40,5 +40,4 @@ repo = {
     "Shortwave": "sudo snap install shortwave",
     "Geany": "sudo apt-get install geany",
     "Mumble Server": "sudo apt-get install mumble-server",
-    
 }

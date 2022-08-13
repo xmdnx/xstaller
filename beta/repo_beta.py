@@ -1,4 +1,4 @@
-# OFFICIAL REPO
+# OFFICIAL BETA REPO
 
 repo = {
     "VirtualBox": "sudo apt install virtualbox -y",
@@ -16,4 +16,28 @@ repo = {
     "Audacity": "sudo add-apt-repository ppa:ubuntuhandbook1/audacity && sudo apt update && sudo apt install audacity",
     "Vim": "sudo apt-get install vim",
     "Inkscape": "sudo add-apt-repository ppa:inkscape.dev/stable && sudo apt update && sudo apt install inkscape",
+    "Simple Screen Recorder": "sudo add-apt-repository ppa:marten-baert/simplescreenrecorder && sudo apt update &&  sudo apt install simplescreenrecorder",
+    "Telegram": "sudo snap install telegram-desktop", 
+    "Caffeine": "sudo add-apt-repository ppa:eugenesan/ppa && sudo apt update && sudo apt install caffeine -y",
+    "Neofetch": "sudo apt install neofetch",
+    "Peek": "sudo add-apt-repository pps:peek-developers/stable && sudo apt update && sudo apt install peek",
+    "Pigdin": "sudo apt-get install pidgin",
+    "Dropbox": "sudo apt-get install nautilus-dropbox",
+    "Terminator": "sudo apt-get install terminator",
+    "Thonny": "sudo apt install thonny",
+    "Font Manager": "sudo add-apt-repository ppa:font-manager/staging && sudo apt update && sudo apt install font-manager",
+    "Atril": "sudo apt install atril",
+    "Notepadqq": "sudo add-apt-repository ppa:notpadqq-team/notepadqq && sudo apt update && sudo apt install notepadqq",
+    "Whatever (.deb)": "wget https://liquidtelecom.dl.sourceforge.net/project/whatever-evernote-client/v1.0.0/Whatever_1.0.0_amd64.deb && sudo dpkg -i Whatever_1.0.0_amd64.deb && sudo apt update && sudo apt upgrade",
+    "Music on Console": "sudo apt-get install moc moc-ffmpeg-plugin",
+    "Bitcoin Core": "sudo add-apt-repository ppa:bitcoin/bitcoin && sudo apt update && sudo apt-get install bitcoin-qt",
+    "Pinta": "sudo snap install pinta",
+    "Guake": "sudo apt-get install guake",
+    "Konversation": "sudo apt-get install konversation",
+    "Conky": "sudo apt-get install conky-all",
+    "Plume Creator": "sudo apt-get install plume-creator",
+    "Flameshot": "sudo apt-get install flameshot",
+    "Shortwave": "sudo snap install shortwave",
+    "Geany": "sudo apt-get install geany",
+    "Mumble Server": "sudo apt-get install mumble-server",
 }

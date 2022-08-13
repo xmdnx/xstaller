@@ -12,5 +12,6 @@ while not exxit:
     command = input('Команда: ')
     new_data += program_name + '": "' + command + '",\n'
 
+repo.truncate(0)
 new_data += "}"
 repo.write(new_data)
