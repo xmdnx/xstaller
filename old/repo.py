@@ -40,5 +40,4 @@ repo = {
     "Shortwave": "sudo snap install shortwave",
     "Geany": "sudo apt-get install geany",
     "Mumble Server": "sudo apt-get install mumble-server",
-    "OBS Studio": "sudo add-apt-repository ppa:obsproject/obs-studio && sudo apt update && sudo apt install obs-studio",
 }

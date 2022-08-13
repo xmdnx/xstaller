@@ -9,7 +9,7 @@
 # Full work guaranteed only on Ubuntu
 
 import os, sys, time
-import repo as repo
+import repo
 
 # VARIABLES
 ubuntu = True
@@ -66,7 +66,6 @@ def menu():
     cls()
     if not ubuntu: console.print('NOT UBUNTU MODE!', style='bad')
     console.print('For exit press CTRL+C', style='good')
-    console.print('Some apps may not work, so contact me in telegram @xmdnpmbot', style='bad')
     console.print(table)
     id_for_install = input('Enter ID of app you want install: ')
     program_name = repo_ids[id_for_install]
